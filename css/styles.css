@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media (max-width: 1200px) {
   .principal .titulo {
     font-size: 2rem;
@@ -212,8 +211,8 @@ footer .copy {
   width: 100%;
 }
 .principal .nosotros .productoSerie img {
-  width: 25%; /* Ajustar el tamaño de las imágenes */
-  height: auto; /* Mantener la proporción de la imagen */
+  width: 25%;
+  height: auto;
   margin-bottom: 1px;
 }
 
