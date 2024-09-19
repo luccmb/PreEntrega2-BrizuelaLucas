@@ -8,10 +8,6 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
-.navbar-custom{
-    background-color: #333;
-}
-
 header .banner {
     width: 100%;
     height: auto;
@@ -25,13 +21,6 @@ header .banner img {
     object-fit: cover;
 }
 
-h1 {
-    color: #ffcf00;
-    background-color: #333;
-    font-weight: bold;
-    font-size: 45px;
-    text-align: center;   
-}
 
 h2{
     background-color: #ffcf00;

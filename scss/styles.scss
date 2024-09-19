@@ -10,42 +10,108 @@
     }
 }
 
-.navbar-center .navbar-nav{
+
+
+.barra {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 12%, rgba(255,207,0,1) 100%, rgba(238,228,0,1) 100%);
+    padding: 10px 0;
+    height: auto;
     display: flex;
     justify-content: center;
-    color: $color2;
-    text-align: center;
-}
-
-
-.principal{
-    background-color: $color3;
-    color: $color1;
-    text-align: center;
-}
-
-.destacados {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;;
-    width: 100%;
-    background-color: $color3;
-    .destacado {
-        background-color: #f9f9f9;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        padding: 20px;
-        width: calc(33.3333% - 20px);
-        h2 {
-            font-size: 1.5em;
-            margin: 0 0 10px;
-        }
-            p {
-            font-size: 1em;
-            margin: 0;
-            text-align: justify;
+    align-items: center;
+    
+    ul {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    li {
+        margin: 0 15px;
+        font-size: 15px;
+        
+        a {
+            color: $colorAmbar;
+            text-decoration: none;
+            font-weight: 500;
+            
+            &:hover {
+                color: $colorAmarillo;
+            }
         }
     }
+}
+
+
+header {
+    .banner {
+        width: 100%; /* Establecer el ancho de .banner al 100% */
+        height: 100%; /* Establecer la altura de .banner al 100% */ 
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+
+.principal {
+    background-color: $colorNegro;
+    color: $colorAmbar;
+    text-align: center;
+    margin: 0;
+
+    .titulo {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .titulo2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .destacados {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .card {
+            margin: 10px;
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 12%, rgba(255,207,0,1) 100%, rgba(238,228,0,1) 100%);
+            color: $colorAmbar;
+            border: solid 1px $colorAmbar;
+            border-radius: 5px;
+
+        .card-title{
+            font-size: 1rem;
+        }
+
+        .card-text{
+            font-size: 0,5rem;
+        }
+            .btn{
+                background-color: $colorAmbar;
+                color: $colorNegro;
+                border: none;
+                &:hover {
+                    background-color: $colorAmarillo;
+                }
+            }        
+        }
+    }
+}
+
+.marcas{
+    width: 100%;
+    background: rgb(238,228,0);
+    background: radial-gradient(circle, rgba(238,228,0,1) 80%, rgba(0,0,0,1) 100%);
+    color: $colorNegro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
