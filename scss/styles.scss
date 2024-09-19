@@ -114,4 +114,46 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .textoMarcas{
+        display: flex;
+        align-items: center;        
+    }
+}
+
+footer {
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorNegro;
+        padding: 20px;
+        
+        a {
+            text-decoration: none;
+            color: $colorAmbar;
+            
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+    
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        background: rgb(238,228,0);
+        background: radial-gradient(circle, rgba(238,228,0,1) 80%, rgba(0,0,0,1) 100%);
+        p{
+            font-size: 20px;
+        }
+    }
+    
+    .copy {
+        text-align: center;
+        background-color: $colorNegro;
+        color: $colorAmbar;
+        margin: 0;
+    }
 }
