@@ -1,3 +1,60 @@
+@charset "UTF-8";
+@media (max-width: 1200px) {
+  .principal .titulo {
+    font-size: 2rem;
+  }
+  .principal .formulario form {
+    width: 70%;
+  }
+  .ubicacion {
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .principal .titulo {
+    font-size: 1.8rem;
+  }
+  .principal .formulario form {
+    width: 80%;
+  }
+  .ubicacion {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .principal .titulo {
+    font-size: 1.6rem;
+  }
+  .principal .formulario form {
+    width: 90%;
+  }
+  .ubicacion {
+    width: 90%;
+  }
+  .marcas img {
+    width: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .principal .titulo {
+    font-size: 1.4rem;
+  }
+  .principal .formulario form {
+    width: 100%;
+  }
+  .ubicacion {
+    width: 100%;
+  }
+  .marcas img {
+    width: 80px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,8 +94,8 @@
 }
 
 header .banner {
-  width: 100%; /* Establecer el ancho de .banner al 100% */
-  height: 100%; /* Establecer la altura de .banner al 100% */
+  width: 100%;
+  height: 100%;
 }
 header .banner img {
   width: 100%;
@@ -133,6 +190,72 @@ footer .copy {
   background-color: #000000;
   color: #ffcf00;
   margin: 0;
+}
+
+.principal .titulo {
+  text-align: center;
+}
+.principal .nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.principal .nosotros p {
+  max-width: 800px;
+}
+.principal .nosotros .productoSerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.principal .nosotros .productoSerie img {
+  width: 25%; /* Ajustar el tamaño de las imágenes */
+  height: auto; /* Mantener la proporción de la imagen */
+  margin-bottom: 1px;
+}
+
+.ubicacion {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.ubicacion iframe {
+  width: 50%;
+  height: auto;
+}
+
+.principal {
+  text-align: center;
+}
+.principal .titulo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.principal .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.principal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal button {
+  display: flex;
+  align-items: center;
+  background-color: #ffcf00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.principal button:hover {
+  background-color: #cca600;
 }
 
 /*# sourceMappingURL=styles.css.map */
