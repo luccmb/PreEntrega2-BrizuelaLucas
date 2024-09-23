@@ -59,7 +59,8 @@
   padding: 0;
   list-style: none;
 }
-* body {
+
+body {
   font-family: "Kanit", sans-serif;
 }
 
@@ -68,27 +69,39 @@
   background: radial-gradient(circle, rgb(2, 0, 36) 12%, rgb(255, 207, 0) 100%, rgb(238, 228, 0) 100%);
   padding: 10px 0;
   height: auto;
+}
+.barra .navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.barra ul {
-  text-decoration: none;
+.barra .navbar .navbar-toggler {
+  border-color: rgb(255, 207, 0);
+}
+.barra .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 207, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.barra .navbar .collapse {
+  justify-content: center;
+}
+.barra .navbar .navbar-nav {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
-.barra li {
+.barra .navbar .navbar-nav .nav-item {
   margin: 0 15px;
   font-size: 15px;
 }
-.barra li a {
+.barra .navbar .navbar-nav .nav-item .nav-link {
   color: #ffcf00;
   text-decoration: none;
   font-weight: 500;
 }
-.barra li a:hover {
+.barra .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #eee400;
 }
 

@@ -1,47 +1,65 @@
 @import "_variables";
 @import "_mediaqueries";
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
-    body {
-        font-family: 'Kanit', sans-serif;
-    }
-}
+  }
+  
+  body {
+    font-family: 'Kanit', sans-serif;
+  }
 
-.barra {
+  .barra {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 12%, rgba(255,207,0,1) 100%, rgba(238,228,0,1) 100%);
     padding: 10px 0;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    ul {
-        text-decoration: none;
+
+    .navbar {
+        width: 100%; 
         display: flex;
         justify-content: center;
-        margin: 0;
-        padding: 0; 
-    }
-    
-    li {
-        margin: 0 15px;
-        font-size: 15px;
-        
-        a {
-            color: $colorAmbar;
+        align-items: center;
+
+        .navbar-toggler {
+            border-color: rgba(255, 207, 0, 1); // Color personalizado para el borde del botón hamburguesa
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 207, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); // Icono hamburguesa personalizado
+            }
+        }
+
+        .collapse {
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
             text-decoration: none;
-            font-weight: 500;
-            
-            &:hover {
-                color: $colorAmarillo;
+
+            .nav-item {
+                margin: 0 15px;
+                font-size: 15px;
+
+                .nav-link {
+                    color: $colorAmbar; // Variable de color personalizada
+                    text-decoration: none;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $colorAmarillo; // Variable de color personalizada para hover
+                    }
+                }
             }
         }
     }
 }
+
 
 
 header {
