@@ -1,7 +1,9 @@
 # PreEntrega2-BrizuelaLucas
  Entrega #3 del curso Desarrollo Web en Coderhouse.  
 # Objetivo
-Demostrar y afianzar los conocimientos adquiridos en HTML5, CSS3, SASS y Bootstrap durante la cursada.  
+Demostrar y afianzar los conocimientos adquiridos durante la cursada.
+# Teconologías utilizadas
+Se utilizó Whimsical para componer los wireframes. El sitio se maqueto integramente con HTML5, incorporando estilos personalizados con CSS3 y ademas se agrego Bootstrap para la correcta compatibilidad con dispositivos moviles. Se incorpora como adicional JavaScript para hacer mas fluida e interactiva la visita por el sitio.
 # Acerca del Proyecto Final
 Se trata de un e-commerce basado en mi actual emprendimiento de impresiones 3D.  
 Las fotos fueron editadas, quitando fondo para una mejor visión de los productos.  
