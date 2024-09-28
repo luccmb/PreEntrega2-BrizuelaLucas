@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-<script>
-  // Función para verificar si un elemento está en el viewport
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     );
   }
 
-  // Función para añadir la clase de animación
   function animateOnScroll() {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -38,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Escuchar el evento scroll y cargar inicial
   window.addEventListener('scroll', animateOnScroll);
   window.addEventListener('load', animateOnScroll);
-</script>
+
 
