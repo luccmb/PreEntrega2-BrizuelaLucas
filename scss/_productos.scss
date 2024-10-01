@@ -1,5 +1,4 @@
-$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-$card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+@import "_variables";
 
 .principal {
   text-align: center;
@@ -37,9 +36,9 @@ $card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        width: 100%;  // Ajusta el ancho al 100% del contenedor
-        height: auto; // Mantiene la proporción de la imagen
-        object-fit: cover; // Asegura que la imagen cubra el área del contenedor
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
 
       .card-body {
@@ -53,16 +52,17 @@ $card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         p.card-text {
           font-size: 1rem;
           margin-bottom: 10px;
+          color: $colorAmbar;
         }
 
         .precio {
           font-size: 1.2rem;
           font-weight: bold;
-          color: #e74c3c;
+          color: $colorAmbar;
         }
 
         .btn {
-          background-color: #3498db;
+          background-color: $colorAmarillo;
           color: white;
           border: none;
           padding: 10px;
@@ -71,7 +71,7 @@ $card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
           transition: background-color 0.3s ease;
 
           &:hover {
-            background-color: #2980b9;
+            background-color: $colorAmbar;
           }
         }
       }

@@ -105,10 +105,11 @@
 .principal .destacados .card .card-body .precio {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #e74c3c;
+  color: #ffcf00;
 }
+
 .principal .destacados .card .card-body .btn {
-  background-color: #3498db;
+  background-color: black;
   color: white;
   border: none;
   padding: 10px;
@@ -116,8 +117,9 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
+
 .principal .destacados .card .card-body .btn:hover {
-  background-color: #2980b9;
+  background-color: #ffcf00;
 }
 
 .principal {
@@ -631,4 +633,3 @@ footer .copy {
   right: 10px;
 }
 
-/*# sourceMappingURL=styles.css.map */
